@@ -1,0 +1,110 @@
+@import url(https://db.onlinewebfonts.com/c/c0cd6ec8ce6d2bbd315a13b62ed13550?family=AdihausDIN);
+@import url(https://db.onlinewebfonts.com/c/d6caca00166438cde071a59b0f091f7a?family=AdiHaus+Bold);
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  font-family: "AdihausDIN";
+}
+main {
+  max-width: 30rem;
+  background-color: white;
+}
+header img {
+  display: block;
+  margin: 2rem auto 1.31rem auto;
+}
+.hero img {
+  width: 100%;
+}
+.content-box {
+  padding: 3rem;
+}
+.title {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #cd3a24;
+  letter-spacing: 0.3rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #423a3a;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  line-height: 3.12rem;
+}
+p {
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
+}
+form {
+  display: flex;
+}
+input[type="text"] {
+  width: 75%;
+  height: 3.1rem;
+  box-sizing: border-box;
+  padding: 0 1.25rem;
+}
+input[type="submit"] {
+  width: 20%;
+  height: 3.1rem;
+  box-sizing: border-box;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.desktop-image {
+  background-image: url(https://assets.codepen.io/6060109/athlete-big.png);
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+  }
+  .hero img {
+    display: none;
+  }
+  header img {
+    margin-left: 3rem;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 0.5rem;
+  }
+  h1,
+  h2,
+  p {
+    text-align: left;
+  }
+  .desktop-image {
+    display: block;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%);
+    background-repeat: no-repeat;
+  }
+  form {
+    margin-bottom: 10rem;
+    margin-top: 2.5rem;
+  }
+}
