@@ -11,6 +11,7 @@ body {
 main {
   max-width: 30rem;
   background-color: white;
+  background-image: url(https://assets.codepen.io/6060109/waves.png);
 }
 header img {
   display: block;
@@ -28,7 +29,8 @@ header img {
 h2 {
   font-size: 3rem;
   text-align: center;
-  color: #cd3a24;
+  /* color: #cd3a24; */
+  color: #2f80ed;
   letter-spacing: 0.3rem;
   line-height: 2.6rem;
   font-weight: 500;
@@ -68,9 +70,22 @@ input[type="submit"] {
   font-weight: 700;
   font-size: 1.2rem;
 }
-.desktop-image {
+form input .submit {
+  background-image: linear-gradient(
+    to right top,
+    #94979b,
+    #818d92,
+    #6f8482,
+    #65796d,
+    #656c56
+  );
+}
+/* .desktop-image {
   background-image: url(https://assets.codepen.io/6060109/athlete-big.png);
   display: none;
+} */
+.desktop-image-edit-shoes {
+  background-image: url(https://assets.codepen.io/6060109/shoes.png);
 }
 @media screen and (min-width: 768px) {
   main {
@@ -102,6 +117,11 @@ input[type="submit"] {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%);
     background-repeat: no-repeat;
+  }
+  .desktop-image-edit-shoes {
+    display: block;
+    background-size: cover;
+    background-repeat: none;
   }
   form {
     margin-bottom: 10rem;
